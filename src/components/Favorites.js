@@ -1,5 +1,7 @@
 import {useEffect, useState} from "react";
 import styled from 'styled-components';
+import {Splide, SplideSlide } from "@splidejs/react-splide"
+import '@splidejs/react-splide/css';
 
 function Favorites(){
 
@@ -15,29 +17,35 @@ const getFavorites = async () => {
     const apiKey = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${process.env.REACT_APP_API_KEY}&number=9`);
     const data = await apiKey.json();
    setFavorites(data.recipes);
+   console.log(data.recipes)
 };
     return (
     <div>
-        {favorites.map((recipe) => {
-            return(
-                <Wrapper>
-                    <h3>Favorite Recipes! </h3>
-                    {favorites.map((recipe) => {
-                        return(
-                            <Card>
-                                <p> {recipe.title} </p>
-                                <img src={recipe.image} alt={recipe.title} />
-                            </Card>
-                        )
-                        })}
-                </Wrapper>
-            );
+         <Wrapper>
+            <h3>Favorite Recipes! </h3>
+             <Splide options ={{
+                perPage: 4,
+                arrow: false,
+                drag: "free",
+                gap: "5rem",
+             }}>
+             {favorites.map((recipe) => {
+             return (
+                <SplideSlide>
+                <Card>
+                 <p> {recipe.title} </p>
+                 <img src={recipe.image} alt={recipe.title} />
+                 </Card>
+                </SplideSlide>
+         )
         })}
-        </div>
+     </Splide>
+    </Wrapper>
+     </div>
     )
 }
 
-const Wrapper =styled.div`
+const Wrapper = styled.div`
 margin: 4rem 0rem;
 `;
 
