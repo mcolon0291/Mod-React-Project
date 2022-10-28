@@ -1,14 +1,13 @@
-// import React, {useEffect, useState} from 'react';
-// import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Pages from "./pages/Pages"
+import Catergory from './components/Category';
 
 
 
 function App() {
  return(
   <div className="App">
-    <h1>Hello</h1>
+    <Catergory/>
     <Pages />
 
   </div>
