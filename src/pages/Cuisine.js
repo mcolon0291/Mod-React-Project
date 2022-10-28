@@ -28,7 +28,8 @@ useEffect(() => {
         {cuisine.map((item) => {
             return(
                 <div key={item.id}>
-                    <img src={item.image} alt="{item.title}"/>
+                    <img src={item.image} alt=""></img>
+                    <h4>{item.title} </h4>
                 </div>
             )
         })}
