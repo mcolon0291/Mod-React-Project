@@ -4,6 +4,9 @@ import {Link} from "react-router-dom"
 function Category(){
     return(
         <List>
+        <Link to={'/pages/home'}>
+            <h4>Home</h4>
+        </Link>
         <Link to={'/cuisine/Italian'}>
             <h4>Italian</h4>
         </Link>

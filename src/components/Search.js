@@ -13,12 +13,13 @@ const submitHandler = (e) => {
 }
 
     return (
-
+        
     <div className="searchForm">
      <form onSubmit={submitHandler}>
     <br />
      <input onChange={(e) => setInput(e.target.value)} type ="text" value={input}/> 
      <input type ="submit" value= "Search"/>
+  
    </form>
   </div>
   )

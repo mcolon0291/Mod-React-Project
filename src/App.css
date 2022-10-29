@@ -1,21 +1,17 @@
-/* .App{
-/* background-color: coral; */
 
 
- */
+.App {
+  font-family: "Roboto" sans-serif;
+  background-color: #f3f3f3
+}
 
-.search-form{
+
+.searchForm{
   min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-bar{
-  width: 50%;
-  border: none;
-  padding: 10px;
 
-
-}
 
