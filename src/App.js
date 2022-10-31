@@ -7,10 +7,13 @@ import Search from './components/Search';
 
 function App() {
  return(
-  <div className="App">
+  <div className="Navbar">
+  <nav>
     <Catergory/>
     <Search />
     <Pages />
+    </nav>
+    
 
   </div>
  );

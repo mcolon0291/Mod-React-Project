@@ -49,17 +49,17 @@ const getFavorites = async () => {
 }
 
 const Wrapper = styled.div`
-// margin: 4rem 0rem;
 `;
 
 const Card = styled.div`
-// min-height: 25rem;
+ min-height: 25rem;
 border-radius: 2rem;
-overflow: hidden;
+ overflow: hidden;
+
 
 img{    
     border-radius: 2rem;
-    }
+   }
 `;
 
 

@@ -24,7 +24,7 @@ useEffect(() => {
 
 
     return (
-        <div>
+        <div className ="cuisine">
             <br/>
         {cuisine.map((item) => {
             return(

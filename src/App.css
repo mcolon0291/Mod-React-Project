@@ -1,17 +1,20 @@
+.App{
+  margin: 0;
+  padding:0;
+  flex-direction: column; 
 
-
-.App {
-  font-family: "Roboto" sans-serif;
-  background-color: #f3f3f3
 }
-
 
 .searchForm{
-  min-height: 10vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
+.ingredients{ 
+text-align: center;
+}
 
-
+.cuisine{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}

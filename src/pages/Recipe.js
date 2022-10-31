@@ -21,18 +21,19 @@ fetchDetials();
 },[params.name])
 
 
-    return <div>
+    return <div className = "ingredients">
         <h2>{details.title}</h2>
         <img src={details.image} alt="" />
         <div key={details.query} alt=""/>
         <h2>Ingredients</h2>
        
-        <ul>
+       
          {details.extendedIngredients?.map((ingreident) => (
-            <li key={ingreident.id}>{ingreident.original}
-            </li>
+            <div key={ingreident.id}>{ingreident.original}
+            </div>
+            
             ))}
-            </ul>
+            
   </div>
 }
     export default Recipe
