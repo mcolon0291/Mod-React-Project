@@ -5,7 +5,7 @@
 <ul>
 <li>React</li>
  <li>Javascript</li>
- <li> CSS </li>, 
+ <li> CSS </li>
  <li>JSX </li>
  </ul>
 
