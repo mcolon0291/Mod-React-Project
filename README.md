@@ -20,9 +20,13 @@
 <p> The app is using the Spoonacular recipe API to fetch all the recipe information.</p>
 
 
+<h1> Challenges </h1>
+ <p> Fetching the data from the API, debugging my code when errors were detected and some issues with CSS/ styling my app. </p>
+
 <h1>Future Improvement</h1>
 <ul>
 <li>Improve recipe ingredient input: sepearate in multiple fields and allow more than 6 ingredients.</li>
 <li>Shopping list feature: button on recipe to add ingredients to a list.</li>
 <li>Get nutrition data on each ingredients from spoonacular API(https://spoonacular.com/food-api) and calculated total calories of recipe.</li>
 </ul>
+
