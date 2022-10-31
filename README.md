@@ -1,7 +1,7 @@
 <h1> Recipe Store </h1>
 <p> An app where users can find recipes for everyday meals! <p>
 
-<h1> Technologies Used <h1>
+<h1> Technologies Used </h1>
 <ul>
 <li>React</li>
  <li>Javascript</li>
