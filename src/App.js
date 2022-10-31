@@ -7,7 +7,6 @@ import Search from './components/Search';
 
 function App() {
  return(
-  <div className="Navbar">
   <nav>
     <Catergory/>
     <Search />
@@ -15,7 +14,6 @@ function App() {
     </nav>
     
 
-  </div>
  );
 }
 
